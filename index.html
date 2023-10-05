@@ -58,6 +58,68 @@
           <button class="section-one-button" type="button">
             Order Service
           </button>
+          <form class="form" action="" name="feedback_form" autocomplete="off">
+            <div class="icon-close">
+              <svg class="icon-fill" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </div>
+            <p class="form-title">
+              Leave your contacts and we will call you back
+            </p>
+            <ul>
+              <li class="form-item">
+                <label class="form-label"
+                  >Name
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    autofocus
+                    required
+                  />
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-label"
+                  >Fhone
+                  <input class="form-input" type="tel" name="fhone" required />
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-label"
+                  >Email
+                  <input class="form-input" type="email" name="email" />
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-label"
+                  >Comment
+                  <textarea
+                    class="textarea"
+                    rows="8"
+                    name="comment"
+                    placeholder="Text input"
+                  ></textarea>
+                </label>
+              </li>
+            </ul>
+            <div>
+              <label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="answer"
+                  value="answer"
+                />
+                <span class="checkbox-text">
+                  I accept the terms and conditions of the
+                  <span class="text-span">Privacy Policy</span></span
+                >
+              </label>
+            </div>
+            <button class="section-one-button" type="submit">Send</button>
+          </form>
         </div>
       </section>
 
@@ -515,7 +577,7 @@
             </li>
           </ul>
         </div>
-        <form action="">
+        <form action="" name="subscriber" autocomplete="off">
           <p class="subscribe">Subscribe</p>
           <input class="blank" type="text" name="E-mail" placeholder="E-mail" />
           <button class="form-button" type="submit">

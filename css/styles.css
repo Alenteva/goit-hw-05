@@ -43,15 +43,11 @@ img {
   top: 0;
   z-index: 999;
 }
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   width: 1158px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
 }
 .heder-navigation-container {
   display: flex;
@@ -195,10 +191,108 @@ img {
   margin-left: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .section-one-button:hover,
 .section-one-button:focus {
   background-color: #404bbf;
+}
+
+.form {
+  width: 408px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: var(--DAIRY, #fcfcfc);
+  padding: 24px;
+  gap: 8px;
+}
+.icon-close {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-fill:hover,
+.icon-fill:focus {
+  fill: #ffffff;
+}
+.icon-close:hover,
+.icon-close:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+.form-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.form-item {
+  margin-bottom: 8px;
+}
+.form-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #2e2f42;
+  margin-top: 4px;
+}
+.form-input:focus-within {
+  border-color: #4d5ae5;
+}
+.textarea {
+  resize: none;
+  margin-top: 4px;
+}
+.textarea::placeholder {
+  color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+}
+.checkbox-container {
+  margin-top: 16px;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+  stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  margin-top: 16px;
+  margin-right: 8px;
+}
+.checkbox:checked {
+  fill: var(--OCEAN, #404bbf);
+  stroke-width: 1px;
+  stroke: var(--OCEAN, #404bbf);
+}
+.checkbox-text {
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  margin-top: 16px;
+}
+.text-span {
+  color: var(--IRIS, #4d5ae5);
+  text-decoration-line: underline;
 }
 .advantages {
   padding: 120px 0;
@@ -366,7 +460,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.thumb:hover .text {
+.list-item-img:hover .text {
   transform: translateY(0);
 }
 .section-portfolio-list {
@@ -409,8 +503,6 @@ img {
   padding: 100px 0;
 }
 .container.footer-container {
-  padding-left: 15px;
-  flex-shrink: 0;
   display: flex;
   align-items: flex-start;
   align-items: baseline;
