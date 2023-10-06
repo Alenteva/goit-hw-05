@@ -580,29 +580,37 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+.form-subscribe {
+  display: flex;
+}
+.subscribe-label {
+  gap: 24px;
+}
 .blank {
-  background: var(--NAVY-BLUE, #2e2f42);
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 264px;
   height: 40px;
-  flex-shrink: 0;
   color: var(--WHITE, #fff);
   font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  padding: 8px 0 8px 16px;
-  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.blank::placeholder {
+  color: #ffffff;
 }
 .form-button {
-  display: inline-flex;
-  margin: 0 auto;
+  display: flex;
+  min-width: 165px;
+  height: 40px;
   margin-left: 24px;
-  padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  border: none;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   color: var(--WHITE, #fff);
@@ -616,6 +624,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-subscribe {
+  margin-left: 16px;
 }
 .form-button:hover,
 .form-button:focus {
