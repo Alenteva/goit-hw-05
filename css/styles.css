@@ -629,7 +629,6 @@ img {
 }
 .form-input:focus-within {
   border-color: #4d5ae5;
-  fill: #4d5ae5;
 }
 .icon-input {
   position: absolute;
@@ -639,7 +638,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-input:focus {
+.icon-input:focus-within {
   fill: #4d5ae5;
 }
 
